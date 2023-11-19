@@ -25,41 +25,41 @@ npm install amqplib -g
 [Tutorial one: "Hello World!"](https://www.rabbitmq.com/tutorials/tutorial-one-javascript.html):
 
 ```shell
-node src/send.js
-node src/receive.js
+node 1_HelloWorld_send.js
+node 1_HelloWorld_receive.js
 ```
 
 [Tutorial two: Work Queues](https://www.rabbitmq.com/tutorials/tutorial-two-javascript.html):
 
 ```shell
-node src/new_task.js "A very hard task which takes two seconds.."
-node src/worker.js
+node 2_WorkQueues_new_task.js "A very hard task which takes two seconds.."
+node 2_WorkQueues_src/worker.js
 ```
 
 [Tutorial three: Publish/Subscribe](https://www.rabbitmq.com/tutorials/tutorial-three-javascript.html)
 
 ```shell
-node src/receive_logs.js
-node src/emit_log.js "info: This is the log message"
+node 3_PubSub_receive_logs.js
+node 3_PubSub_emit_log.js "info: This is the log message"
 ```
 
 [Tutorial four: Routing](https://www.rabbitmq.com/tutorials/tutorial-four-javascript.html):
 
 ```shell
-node src/receive_logs_direct.js info
-node src/emit_log_direct.js info "The message"
+node 4_Routing_receive_logs_direct.js info
+node 4_Routing_emit_log_direct.js info "The message"
 ```
 
 [Tutorial five: Topics](https://www.rabbitmq.com/tutorials/tutorial-five-javascript.html):
 
 ```shell
-node src/receive_logs_topic.js "*.rabbit"
-node src/emit_log_topic.js red.rabbit Hello
+node 5_Topics_receive_logs_topic.js "*.rabbit"
+node 5_Topics_emit_log_topic.js red.rabbit Hello
 ```
 
 [Tutorial six: RPC](https://www.rabbitmq.com/tutorials/tutorial-six-javascript.html):
 
 ```shell
-node src/rpc_server.js
-node src/rpc_client.js 30
+node 6_RPC_rpc_server.js
+node 6_RPC_rpc_client.js 30
 ```
